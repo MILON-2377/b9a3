@@ -5,11 +5,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hockeys website with tailwind and daisy ui</title>
 
+    <!--All icons Link-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!--marope font link-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;400;500;600;700;800&display=swap" rel="stylesheet">
+
     <!--Tailwind and daisy ui link-->
-    <script src="https://cdn.tailwindcss.com"></script>
+ 
+<link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+
+<style>
+    .manrope-font{
+        font-family: 'Manrope', sans-serif;
+    }
+</style>
 
 </head>
 <body>
-    <img src="/Images/1.png" alt="">
+    <header class=" w-11/12 mt-5 sm:w-11/12 lg:w-11/12 lg:px-32 lg:pt-14 mx-auto my-0">
+        <!--navbar section-->
+        <nav class="h-14 flex justify-between items-center px-">
+            
+            <!--navbar incon section-->
+            <div class="flex justify-between items-center w-40">
+                <div class=" w-6 h-6 text-[#131318] sm:hidden lg:hidden">
+                    <i class="fa-solid fa-bars text-2xl"></i>
+                </div>
+
+                <h2 class=" text-2xl my-auto mx-0 mt-2 lg:text-4xl manrope-font text-[#131318] font-extrabold">Hockey <sup class="text-[#FF4240] text-2xl lg:text-4xl manrope-font font-extrabold">,</sup>s</h2>
+            </div>
+
+            <!--this is navbar negate bar description section-->
+            <div class="hidden sm:block lg:block">
+                <ul class=" manrope-font text-base font-normal text-center lg:w-96 sm:w-80 sm:mr-8 flex justify-between">
+                    <li><span class="text-base font-bold text-[#FF4240]">Home</span></li>
+                    <li>About</li>
+                    <li>Pages</li>
+                    <li>Blog</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+
+            <!--this is navigation button and search section--> 
+            <div class=" h-14 lg:w-40 sm:w-44 flex justify-between items-center">
+                <div class=" hidden sm:block lg:block h-6 w-6">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+                <button class="btn py-2 px-4 text-xl font-bold btn-secondary bg-[#FF4240] lg:px-6 manrope-font">Get Ticket</button>
+            </div>
+        </nav>
+    </header>
 </body>
 </html>
